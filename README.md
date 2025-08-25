@@ -2,7 +2,7 @@
 
 `pdf_link_check.py` checks the hyperlinks in a Portable Document Format (PDF) file. The script is a command line app.
 
-Release: V1.1.1 2020.1.23
+Release: V1.1.X 2025.8.25
 
 
 ## Install dependencies
@@ -57,9 +57,8 @@ The script requires the following dependencies:
 
 Run `pdf_link_check.py` from your command line:
 
-1. Open your command line and run: `python <path to script>/pdf_link_check.py`
-2. The script will ask for the path of the PDF you would like to parse. Enter the absolute path name.<br>On a Windows 10 machine, this might look like: `c:\<pathtoyourpdf>/pdffile.pdf`
-3. The script will ask for a location and filename where you would like to save the output.<br>On a Windows 10 machine, this might look like: `c:\<pathtoyourreport>/pdflinkreport.csv`
+1. Open your command line and run: `python <path to script>/pdf_link_check.py c:\<pathtoyourpdf>/pdffile.pdf`
+2. The script will authmatically remove the extension 4 characters, append with and output to that file with a .csv extension
 4. The script will run. The script displays in the terminal:
     - PDF page number
     - URI checked
